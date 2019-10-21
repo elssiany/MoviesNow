@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2b2b2c</color>
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorAccent">#1795fc</color>
+    <color name="colorAccentDark">#115893</color>
+
+    <!-- Grey -->
+    <color name="md_grey_50">#FAFAFA</color>
+    <color name="md_grey_100">#F5F5F5</color>
+    <color name="md_grey_200">#EEEEEE</color>
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_grey_400">#BDBDBD</color>
+    <color name="md_grey_500">#9E9E9E</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_grey_700">#616161</color>
+    <color name="md_grey_800">#424242</color>
+    <color name="md_grey_900">#212121</color>
+    <color name="md_black_1000">#000000</color>
+    <color name="md_white_1000">#FFFFFF</color>
+
+
+    <color name="grey_light_tertiary">#eeeeee</color>
+    <color name="desert_storm">#f8f8f8</color>
+    <color name="white_alpha100">#ffffff</color>
+    <color name="pale_robin_egg_blue">#9ee2ce</color>
+    <color name="primary_color">#E91E63</color>
+    <color name="mountain_meadow">#E91E63</color>
+    <color name="primary_color_darker">#2b896e</color>
+    <color name="grey_light_primary">#999999</color>
+    <color name="grey_light_secondary">#cccccc</color>
+    <color name="grey_dark_secondary">#666666</color>
+    <color name="black_alpha20">#33000000</color>
+    <color name="black_alpha30">#4c000000</color>
+    <color name="black_alpha47">#77000000</color>
+    <color name="black_alpha73">#bb000000</color>
+    <color name="status_bar_color">#33000000</color>
+
+
+    <color name="color0">#ffdad049</color>
+    <color name="color1">#ff63c33c</color>
+    <color name="color2">#ffce3af4</color>
+    <color name="color3">#ff3280db</color>
+    <color name="color4">#ffa061ee</color>
+    <color name="color5">#ff59a0d8</color>
+    <color name="color6">#ffe03c5e</color>
+    <color name="color7">#ff9800</color>
+    <color name="color8">#607d8b</color>
+    <color name="color9">#4caf50</color>
+    <color name="color10">#f44336</color>
+    <color name="color11">#9c27b0</color>
+    <color name="color12">#2196f3</color>
+    <color name="color13">#00bcd4</color>
+    <color name="color14">#009688</color>
+    <color name="color15">#3ffebb</color>
+    <color name="color_button_red">#F46262</color>
+    <color name="white_transparent">#88ffffff</color>
+
+
+</resources>

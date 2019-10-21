@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_margin="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/art_3"
+        android:contentDescription="@null"
+        android:id="@+id/img"
+        android:layout_width="280dp"
+        android:layout_height="180dp"/>
+    <ImageView
+        android:tint="@color/colorAccent"
+        android:layout_margin="12dp"
+        android:src="@drawable/ic_favorite_white"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="bottom|end"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+</FrameLayout>

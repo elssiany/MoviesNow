@@ -1,0 +1,54 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+// Create a variable called keystorePropertiesFile, and initialize it to your
+// keystore.properties file, in the rootProject folder.
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+// Initialize a new Properties() object called keystoreProperties.
+def keystoreProperties = new Properties()
+// Load your keystore.properties file into the keystoreProperties object.
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+project.ext {
+    // TODO: You must update the APP_ID and the KEYSTORE information.
+    //
+    // The APP_ID must be the Android package name uploaded to the Google Play Store.
+    //
+    // The KEYSTORE information should be updated in keystore.properties,
+    // which is located in the project root directory.
+    // The KEYSTORE must be your production keys.
+    //
+    // The storeFile location can be a relative or absolute filename.
+    // https://docs.gradle.org/current/userguide/working_with_files.html
+
+    KEYSTORE_STORE_FILE = rootProject.file(keystoreProperties['storeFile'])
+    KEYSTORE_STORE_PASSWORD = keystoreProperties['storePassword']
+    KEYSTORE_KEY_ALIAS = keystoreProperties['keyAlias']
+    KEYSTORE_KEY_PASSWORD = keystoreProperties['keyPassword']
+
+    APP_ID = "com.kevinserrano.moviesnow"
+    MOBILE_VERSION_CODE = 1
+    MOBILE_VERSION_NAME = "1.0.0"
+}
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

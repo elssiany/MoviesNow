@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Notificaciones">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_notifications_1"
+            android:title="@string/title_preference_1" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_notifications_2"
+            android:title="@string/title_preference_2" />
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="@string/mas">
+
+        <Preference
+            android:title="@string/message_preference_3"
+            android:key="pref_rating"
+            android:summary="@string/message_preference_4" />
+
+
+        <EditTextPreference
+            android:dialogIcon="@drawable/ic_star_yellow_500"
+            android:dialogMessage="@string/message_preference_6"
+            android:inputType="text"
+            android:key="pref_send_comments"
+            android:summary="@string/summary_preference_2"
+            android:title="@string/title_preference_3"/>
+
+        <Preference
+            android:title="@string/message_preference_1"
+            android:key="more_apps" />
+
+
+
+        <Preference
+            android:title="@string/message_preference_7"
+            android:summary="@string/summary_preference_1"
+            android:key="politics_use" />
+
+        <!--
+        <Preference
+            android:title="Licencias de software libre"
+            android:key="pref_licences" />
+        -->
+        <Preference
+            android:summary="v1.0.0"
+            android:title="@string/message_preference_2"
+            android:key="pref_about" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

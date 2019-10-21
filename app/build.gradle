@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+//****************************/
+def KEY_API_MOVIES = '"' + KeyAPIMovies + '"' ?: '"Define key for notifications Firebase"'
+def STRING = 'String'
+//****************************/
+android {
+    compileSdkVersion 28
+    signingConfigs {
+        config {
+            storeFile project.KEYSTORE_STORE_FILE
+            storePassword project.KEYSTORE_STORE_PASSWORD
+            keyAlias project.KEYSTORE_KEY_ALIAS
+            keyPassword project.KEYSTORE_KEY_PASSWORD
+        }
+    }
+    defaultConfig {
+        applicationId APP_ID
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode Integer.valueOf(MOBILE_VERSION_CODE)
+        versionName MOBILE_VERSION_NAME
+
+        //*********We can define the variable here *********
+        //Sync the file once you are done with the setting as bellow
+        each { type ->
+            //type.buildConfigField 'DATAYPE','VARIABLE_NAME','\"GRADLE VARIABLE\"'
+            type.buildConfigField STRING, 'KeyAPIMovies', KEY_API_MOVIES
+        }
+        //testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true /*Intentará eliminar todas las clases y miembros de la clase que
+            no se usen, así como cambiar el nombre de cualquier identificador que use nombres más cortos.
+             Ambas operaciones hacen que el código resultante sea más pequeño, pero este último puede hacer
+            que la depuración resulte engorrosa, por lo que le sugiero que solo habilite la minificación
+             para su tipo de versión de lanzamiento*/
+            shrinkResources true
+            //Elimina recursos que no se estan usando como imagenes y entre otros documentos del APK
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com'
+        }
+        maven { url "https://jitpack.io" }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //-----------------------Design libraries------------------------------
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+
+
+    //-----------------------External Libraries----------------------------
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    //Retrofit Dependencies
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //DateTime
+    implementation 'com.github.thunder413:DateTimeUtils:1.0'
+
+    //-----------------------Testing Libraries-----------------------------
+    //testImplementation 'junit:junit:4.12'
+    //androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    //androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

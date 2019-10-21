@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/nestedScrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.activities.MovieDetailsActivity"
+    tools:showIn="@layout/activity_home">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="20dp"
+            android:scrollbars="horizontal"
+            android:id="@+id/rvDataFilter1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="@string/proximamente"
+            android:textStyle="bold"
+            android:textColor="@color/md_white_1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:scrollbars="horizontal"
+            android:id="@+id/rvDataFilter2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="@string/populares"
+            android:textStyle="bold"
+            android:textColor="@color/md_white_1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:scrollbars="horizontal"
+            android:id="@+id/rvDataFilter3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="@string/mejor_calificadas"
+            android:textStyle="bold"
+            android:textColor="@color/md_white_1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginBottom="40dp"
+            android:scrollbars="horizontal"
+            android:id="@+id/rvDataFilter4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

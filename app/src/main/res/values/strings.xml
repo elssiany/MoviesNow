@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MoviesNow</string>
+
+    <string name="title_preference_1">Alertae de nuevas películas</string>
+    <string name="title_preference_2">Alertar de películas populares</string>
+    <string name="title_preference_3">Enviar comentarios o sugerencias</string>
+    <string name="message_preference_1">Más Aplicaciones</string>
+    <string name="message_preference_2">Acerca de…</string>
+    <string name="message_preference_3">¿Te gusta la app?</string>
+    <string name="message_preference_4">Califícanos en Google Play</string>
+    <string name="message_preference_5">Cambiar idioma</string>
+    <string name="message_preference_6">Quieres nuevas funcionalidades? Danos tu sugerencia para mejorar la aplicación, todos son bienvenidos.</string>
+    <string name="message_preference_7">Políticas y condiciones</string>
+    <string name="summary_preference_1">Consulta cómo manejamos tus datos y cómo lo usamos</string>
+    <string name="summary_preference_2">Ayuda a mejorar esta grandiosa aplicación</string>
+    <string name="title_1">Personalizar</string>
+    <string name="title_2">Enviar comentarios o sugerencias</string>
+    <string name="mas">Más</string>
+    <string name="loading">Cargando…</string>
+    <string name="sincronizando_datos">Sincronizando datos…</string>
+    <string name="p_de_p">Por favor, lea nuestras &lt;a href="https://www.ikevinsm.site/">Políticas de privacidad&lt;/a&gt; antes de registrarse.</string>
+    <string name="message_1">Calificanos en Google Play y ayúdanos a mejorar esta grandiosa app</string>
+    <string name="continuar">Continuar</string>
+    <string name="configuraciones">Configuraciones</string>
+    <string name="recomendaciones">Recomendaciones</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="bienvenido">Bienvenido</string>
+
+
+    <!-- ........................... messages warning .....................................  -->
+    <string name="message_warning_1">Para usar la app, debe aceptar los términos</string>>
+
+
+    <!-- ........................... Messages Errors .....................................  -->
+
+    <string name="message_error_1">Sin conexión a internet :(</string>
+    <string name="message_error_2">Algo salió mal…¡Inténtalo más tarde!</string>
+    <string name="message_intro">Bienvenido a MoviesNow, la mejor app para descubrir películas y mucho más</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="recomendado_para_ti">Recomendado para ti</string>
+    <string name="populares">Populares</string>
+    <string name="mejor_calificadas">Mejor calificadas</string>
+    <string name="proximamente">Próximamente</string>
+    <string name="estrenos">Estrenos</string>
+    <string name="trailers">Trailers</string>
+    <string name="buscar_pel_culass">Buscar películas</string>
+
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.IntroActivity">
+
+    <ImageView
+        android:alpha=".7"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="start|end"
+        android:contentDescription="@null"
+        android:src="@drawable/art_2"
+        android:layout_width="100dp"
+        android:layout_height="150dp" />
+
+    <ImageView
+        android:layout_marginBottom="-10dp"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="start|bottom"
+        android:src="@drawable/art_1"
+        android:layout_width="190dp"
+        android:layout_height="220dp" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activities.IntroActivity">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/art_4"
+            android:layout_width="190dp"
+            android:layout_height="140dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/md_white_1000"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/txt_msm"
+            android:text="@string/message_intro"
+            android:textSize="20sp"
+            android:typeface="serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:id="@+id/container_terms"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <CheckBox
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:id="@+id/chb_term_and_cond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/md_white_1000"
+                android:layout_marginStart="12dp"
+                android:linksClickable="true"
+                android:id="@+id/txtPtp"
+                android:text="@string/p_de_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:alpha=".7"
+            android:textStyle="bold"
+            android:background="@drawable/rectangle_color_accent"
+            android:text="@string/comenzar"
+            android:textColor="@color/md_white_1000"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/btnInit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/md_white_1000"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="6dp"
+        android:layout_gravity="center|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Kevin Serrano"/>
+
+</FrameLayout>
